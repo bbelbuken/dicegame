@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  background-color: darkgreen;
+}
+
+img { 
+    display: block;
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+
+}
+
+h1 {
+    font-size: 8vw;
+    color: whitesmoke;
+    white-space: nowrap;
+    width: auto;
+    text-shadow: 5px 5px black;
+}
+
+p {
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 1px 2px 20px white;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+    gap: 10rem;
+    flex-shrink: 2;
+}
+
+.dice {
+    flex: 1 1 250px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    margin-top: 150px;
+    background-color: black;
+    color: white;
+    border: 5px ridge red;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 100;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: end; /* Center vertically */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: rgb(59, 59, 59);
+    box-shadow: 0px 0px 1px 1px black;
+    border: 5px ridge rgb(255, 99, 99);
+}
+
+button:active {
+    background-color: rgb(59, 59, 59);
+    filter: brightness(1.2);
+    box-shadow: 1px 1px 10px 3px black;
+    border: 5px ridge rgb(255, 155, 155);
+}
