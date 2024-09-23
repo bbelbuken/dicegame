@@ -89,3 +89,28 @@ button:active {
     box-shadow: 1px 1px 10px 3px black;
     border: 5px ridge rgb(255, 155, 155);
 }
+
+.img1, .img2 {
+    animation: none 0.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1, 1);;
+        filter: invert(0%);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.8, 0.8);;
+
+        
+    }
+    100% {
+        transform: rotate(360deg) scale(1, 1);;
+        filter: invert(200%);
+    }
+}
+
+.filter-effect {
+
+    filter: blur(51px);
+}
